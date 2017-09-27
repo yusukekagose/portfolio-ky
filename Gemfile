@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -51,8 +51,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'friendly_id', '~> 5.1.0'
-
-
-
+gem 'orm_adapter', '~> 0.5.0'
+gem 'responders', '~> 2.4'
+gem 'warden', '~> 1.2', '>= 1.2.7'
+gem 'devise', '~> 4.2'
 
 
