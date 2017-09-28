@@ -55,5 +55,8 @@ gem 'orm_adapter', '~> 0.5.0'
 gem 'responders', '~> 2.4'
 gem 'warden', '~> 1.2', '>= 1.2.7'
 gem 'devise', '~> 4.2'
-
-
+gem 'popper_js', '~> 1.11.1'
+gem 'autoprefixer-rails', '~> 7.1', '>= 7.1.4.1'
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
