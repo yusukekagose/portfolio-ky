@@ -93,3 +93,5 @@ gem 'memoizable', '~> 0.4.2'
 gem 'naught', '~> 1.1'
 gem 'simple_oauth', '~> 0.3.1'
 gem 'twitter', '~> 6.1.0'
+
+gem 'redis', '~>  4.0.1'
