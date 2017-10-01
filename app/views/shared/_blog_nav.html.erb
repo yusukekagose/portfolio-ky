@@ -1,8 +1,12 @@
-<div class="blog-masthead">
-  <div class="container">
-    <nav class="nav blog-nav">
-      <%= nav_helper 'nav-link', 'span' %>
-      <%= login_helper 'nav-link' %>
-    </nav>
+<nav class="blog-masthead navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+  <%= link_to "Yusuke", root_path, class: 'navbar-brand' %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <%= nav_helper 'nav-link', 'span' %>
+    <%= login_helper 'nav-link' %>
   </div>
 </div>
+</nav>
