@@ -7,13 +7,138 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profile.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+         <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
 
       <div class="col-md-8">
-        <p>With over a decade of development experience in a number of industries I realized that the typical product creation process between clients and developers was flawed. All too often developers rarely communicate to clients throughout the development stage, resulting in a final product that fails to reach the goal sought by the customer and end user.</p>
+        <p><%= render "introduction" %></p>
 
-        <p>For this reason I decided to utilize a completely different development pattern that focuses on highly focused communication and transparent design patterns. When I take on a project not only do I work to craft the application according to the client's specifications, I give daily updates to ensure that the project is aligning properly with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#experience"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Experience
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#hobby"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            hobby
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              teaching assistant
+            </div>
+            <div class="card card-block">
+              金持ち外国人のひも
+            </div>
+            <div class="card card-block">
+              sakaue inc
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              寝屋川高校
+            </div>
+            <div class="card card-block">
+              同志社大学 商学部
+            </div>
+            <div class="card card-block">
+              Canadian colleage
+            </div>
+            <div class="card card-block">
+              Tech Camp
+            </div>
+          </div>
+
+          <div class="collapse" id="experience">
+            <div class="card card-block">
+              下ネタを言いすぎて三者面談で怒られる(中学3年間で3回)
+            </div>
+            <div class="card card-block">
+              クラスの女子半分に嫌われる(高校)
+            </div>
+            <div class="card card-block">
+              40以上の都道府県を旅行
+            </div>
+            <div class="card card-block">
+               スペイン、中国、サウジアラビア、韓国、フランス人などとルームシェアをして一緒に暮らす
+            </div>
+          </div>
+
+          <div class="collapse" id="hobby">
+            <div class="card card-block">
+              将棋(1級)
+            </div>
+            <div class="card card-block">
+               テニス（中学高校部活動）
+            </div>
+            <div class="card card-block">
+               お笑い
+            </div>
+            <div class="card card-block">
+               MBA観戦
+            </div>
+            <div class="card card-block">
+               読書(年間100以上特にロシア文学が好き)
+            </div>
+          </div>
+
+
+        </p>
       </div>
     </div>
   </div>
 </div>
+

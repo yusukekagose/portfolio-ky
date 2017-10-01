@@ -164,10 +164,7 @@ body {
 /*
  * Custom Styles
  */
-.card{
-  padding: 15px;
-  margin-top:8em;
-}
+
 .card-block{
  color: black;
  text-align: left;
@@ -223,9 +220,25 @@ body {
   color: black;
   text-align: left;
 }
+.app-card-container .card{
+  margin-top: 100px;
+  padding: 12px;
+}
 .profile-img {
   border: 1px solid gray;
 }
 .app-card-container a {
   color:blue;
+}
+.collapse .card {
+  margin-top:5px;
+}
+
+.skills{
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 5px;
+}
+.skills > .skill{
+  margin-top:5px;
 }
