@@ -94,6 +94,9 @@ gem 'naught', '~> 1.1'
 gem 'simple_oauth', '~> 0.3.1'
 gem 'twitter', '~> 6.1.0'
 
+gem 'eventmachine', '~>  1.2.5'
+gem 'hiredis', '~> 0.6.1'
+gem 'em-hiredis', '~> 0.3.1'
 gem 'redis', '~>  4.0.1'
 
 gem 'redcarpet', '~> 3.4.0'
