@@ -65,6 +65,8 @@ body {
  * Header
  */
 
+
+
 .masthead {
   margin-bottom: 2rem;
 }
@@ -178,6 +180,7 @@ body {
 
 
 .login > .card{
+  padding: 15px;
   width:22rem;
   margin: 0 auto;
   float:none;
@@ -205,6 +208,9 @@ body {
 .app-footer {
   color: white;
 }
+.tech-news-wrap{
+  padding-top:60px;
+}
 .tech-news{
   color:black;
 }
@@ -214,7 +220,7 @@ body {
 .tech-news > .card{
   padding:5px;
   margin-top:1em;
-  background: gray;
+  background: white;
 }
 .app-card-container {
   color: black;
@@ -241,4 +247,10 @@ body {
 }
 .skills > .skill{
   margin-top:5px;
+}
+.registar-new > .card{
+  padding: 15px;
+}
+.insert-padding{
+  padding-top: 60px;
 }
