@@ -97,7 +97,7 @@ gem 'twitter', '~> 6.1.0'
 gem 'eventmachine', '~>  1.2.5'
 gem 'hiredis', '~> 0.6.1'
 gem 'em-hiredis', '~> 0.3.1'
-gem 'redis', '~>  4.0.1'
+gem 'redis', '~> 3.3.5'
 
 gem 'redcarpet', '~> 3.4.0'
 gem 'coderay', '~>  1.1.2'
